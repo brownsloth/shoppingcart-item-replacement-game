@@ -1,0 +1,2 @@
+{"timestamp": "2025-03-29T21:57:21.289761", "num_samples": 28, "mse": 387.0290302559807, "r2": 0.8388537115417896, "features": ["price_diff", "rating_diff", "has_rating", "semantic_similarity"], "model_path": "replacement_model.pkl"}
+{"timestamp": "2025-03-29T21:57:44.493104", "num_samples": 28, "mse": 387.0290302559807, "r2": 0.8388537115417896, "features": ["price_diff", "rating_diff", "has_rating", "semantic_similarity"], "model_path": "replacement_model.pkl"}
