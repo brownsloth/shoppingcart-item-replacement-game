@@ -112,54 +112,35 @@ While a simple rule-based score (price difference + rating difference) works ini
 
 ### **1\. Clone and prepare environment**
 
-bash
-
-CopyEdit
-
-git clone <https://github.com/your-username/item-replacement-game.git>
-
+```bash
+git clone <https://github.com/our-username/item-replacement-game.git>
 cd item-replacement-game
-
 python3 -m venv venv
-
 source venv/bin/activate
-
 pip install -r requirements.txt
-
+```
 ### **2\. Prepare data**
 
-Make sure your preprocessed item data with embeddings is saved as:
-
-pgsql
-
-CopyEdit
-
+Make sure our preprocessed item data with embeddings is saved as:
+```
 items_with_embeddings.json
-
-You can use a script like prepare_items.py to clean and embed your data.
+```
+We can use a script like prepare_items.py to clean and embed our data.
 
 ### **3\. Start backend**
 
-bash
-
-CopyEdit
-
+```bash
 uvicorn main:app --reload
-
+```
 Make sure this runs at <http://localhost:8000>.
 
 ### **4\. Start frontend**
 
-bash
-
-CopyEdit
-
-cd frontend # or wherever your frontend lives
-
+```bash
+cd frontend # or wherever our frontend lives
 npm install
-
 npm run dev
-
+```
 Navigate to <http://localhost:3000>.
 
 ## **Retrain Dashboard**
